@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      src="https://kit.fontawesome.com/22a70726e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/22a70726e2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+    <title>Tea house</title>
+  </head>
+  <body class="font-manrope">
+    <header class="container mx-auto">
+      <div class="hero">
+        <div
+          class="hero-content justify-between flex-col md:flex-col lg:flex-row-reverse"
+        >
+          <div class="flex-1 relative ">
+            <img class="sm:w-full md:w-3/4 lg:w-full  mx-auto" src="./images/banner.png" class="rounded-lg" />
+            <div
+              class="w-28 sm:w-40 md:w-40  lg:w-48 xl:w-56 h-[55px] sm:h-16  lg:h-20 xl:h-24  flex items-center gap-1  sm:gap-2 md:gap-2 lg:gap-3   rounded-xl shadow-lg bg-white p-1 sm:p-2 md:p-2  lg:p-3 justify-center absolute min-[280px]:top-3/4 sm:left-20 md:top-56 lg:top-56 xl:top-72 2xl:top-80 min-[280px]:left-10  md:left-28 lg:left-8 xl:left-20  min-[280px]:rounded-md sm:rounded-lg "
+            >
+              <i class="fa-solid fa-star text-base sm:text-xl lg:text-2xl xl:text-3xl  text-yellow-400"></i>
+              <div>
+                <h1 class="text-lg sm:text-xl md:text-xl  lg:text-2xl xl:text-3xl font-extrabold">5.00</h1>
+                <p class=" text-[10px] sm:text-xs md:text-xs lg:text-sm xl:text-base  font-semibold">
+                  Trust Pilot Ratings
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex-1 space-y-5 md:mt-7 min-[280px]:mt-4">
+            <h1 class="min-[280px]:text-3xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl  font-bold leading-tight">
+              It's good tea time at The Tea House
+            </h1>
+            <p class="min-[280px]:text-sm md:text-base sm:text-base lg:text-lg sm:w-3/4 md:w-3/4 lg:w-full  text-lg  leading-8">
+              Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+              Your Taste Buds.
+            </p>
+            <button
+              class="btn bg-gradient-to-r from-[#F00] to-[#FF8938] text-white min-[280px]:text-base sm:text-xl min-[280px]:font-semibold sm:font-bold min-[280px]:w-40 sm:w-48  min-[280px]:h-12 sm:h-14 md:h-16 "
+            >
+              Explore More <i class="fa-solid fa-arrow-trend-up"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container mx-auto"></main>
+    <footer></footer>
+  </body>
+</html>
