@@ -33,15 +33,89 @@
       };
     </script>
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Manrope:wght@400;500;600;700;800&display=swap");
+
       .font-manrope {
         font-family: "Manrope", sans-serif;
+      }
+      .font-poppins {
+        font-family: "Poppins", sans-serif;
       }
     </style>
     <title>Tea house</title>
   </head>
   <body class="font-manrope">
     <header class="container mx-auto">
+      <div class="navbar bg-base-100">
+        <div class="flex-1">
+          <a class="btn btn-ghost text-3xl font-bold font-poppins"
+            ><span style="color: rgb(71, 70, 71)">Gong</span>
+            <span style="color: rgb(49, 202, 62)">cha</span></a
+          >
+        </div>
+        <div class="flex-none">
+          <div class="dropdown dropdown-end">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+              <div class="indicator">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+                <span class="badge badge-sm indicator-item">8</span>
+              </div>
+            </div>
+            <div
+              tabindex="0"
+              class="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow"
+            >
+              <div class="card-body">
+                <span class="font-bold text-lg">8 Items</span>
+                <span class="text-info">Subtotal: $999</span>
+                <div class="card-actions">
+                  <button class="btn btn-primary btn-block">View cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown dropdown-end">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn btn-ghost btn-circle avatar"
+            >
+              <div class="w-10 rounded-full">
+                <img
+                  alt="Tailwind CSS Navbar component"
+                  src="./images/user-1.png"
+                />
+              </div>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li>
+                <a class="justify-between">
+                  Profile
+                  <span class="badge">New</span>
+                </a>
+              </li>
+              <li><a>Settings</a></li>
+              <li><a>Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <div class="hero">
         <div
           class="hero-content justify-between flex-col md:flex-col lg:flex-row-reverse"
@@ -96,12 +170,13 @@
     <main class="container mx-auto">
       <section class="mt-32 px-5">
         <div class="space-y-5 flex flex-col items-center text-center">
-          <h1 class="text-5xl font-extrabold">Our Featured Products</h1>
+          <h1 class="md:text-5xl text-3xl font-extrabold">
+            Our Featured Products
+          </h1>
           <p class="text-base font-medium w-[90%] text-[#777777]">
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration in some form, by injected
-            humour, or randomised words which don't look even slightly
-            believable.
+            humour,
           </p>
         </div>
         <div
@@ -146,35 +221,37 @@
         </div>
       </section>
       <section class="mt-32 px-5">
-        <div class="flex gap-12">
-          <div class="flex-1 grid gap-7 grid-cols-2 grid-rows-3">
+        <div class="flex gap-12 lg:flex-row flex-col">
+          <div
+            class="flex-1 grid lg:gap-7 gap-4 md:grid-cols-2 grid-cols-1 grid-rows-3"
+          >
             <div
               class="bg-gradient-to-r from-[rgba(255,0,0,1)] to-[rgba(255,137,56,1)] rounded-xl"
             ></div>
             <div
-              class="bg-[#E6A6231A] rounded-xl flex justify-center items-center row-span-2"
+              class="bg-[#E6A6231A] rounded-xl flex justify-center items-center row-span-2 py-14"
             >
               <img
-                class="w-[177px] h-[266px]"
+                class="lg:w-[177px] w-48 lg:h-[266px] h-60"
                 src="./images/fresh-1.png"
                 alt=""
               />
             </div>
             <div
-              class="bg-[#5776391A] rounded-xl flex justify-center items-center row-span-2"
+              class="bg-[#5776391A] rounded-xl flex justify-center items-center row-span-2 py-14"
             >
               <img
-                class="w-[177px] h-[266px]"
+                class="lg:w-[177px] w-48 lg:h-[266px] h-60"
                 src="./images/fresh-2.png"
                 alt=""
               />
             </div>
             <div
-              class="bg-gradient-to-r from-[#D9D9D9] to-[#FFFFFF00] rounded-xl"
+              class="bg-gradient-to-r from-[#D9D9D9] to-[#FFFFFF00] rounded-xl h-52 md:h-auto"
             ></div>
           </div>
           <div class="flex-1 space-y-5">
-            <h1 class="text-5xl font-extrabold">
+            <h1 class="md:text-5xl text-3xl font-extrabold">
               Great Tea, Freshly Presented
             </h1>
             <p class="text-base font-medium leading-relaxed text-[#777777]">
@@ -192,7 +269,7 @@
               </p>
             </div>
             <div class="space-y-3">
-              <h1 class="text-2xl font-medium">Premium Quality</h1>
+              <h1 class="text-2xl font-extrabold">Premium Quality</h1>
               <p class="text-base font-semibold leading-relaxed text-[#777777]">
                 Premium Quality that makes tea more elegant and more durable
                 when you use it.
@@ -203,12 +280,11 @@
       </section>
       <section class="mt-32 px-5">
         <div class="space-y-5 flex flex-col items-center text-center">
-          <h1 class="text-5xl font-extrabold">News & Events</h1>
+          <h1 class="md:text-5xl text-3xl font-extrabold">News & Events</h1>
           <p class="text-base font-medium w-[90%] text-[#777777]">
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration in some form, by injected
-            humour, or randomised words which don't look even slightly
-            believable.
+            humour,
           </p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8">
@@ -258,11 +334,13 @@
       </section>
     </main>
     <footer
-      class="mt-32 bg-gradient-to-br from-[#ebd0d0] to-[#ffe4d0] px-32 pt-24 pb-10"
+      class="mt-32 bg-gradient-to-br from-[#ebd0d0] to-[#ffe4d0] md:px-32 px-3 md:pt-24 pt-5 md:pb-10 pb-2"
     >
-      <div class="flex justify-between">
-        <img src="./images/cup.png" alt="" />
-        <div class="flex gap-4 items-center text-xl font-medium">
+      <div class="flex justify-between md:flex-row flex-col items-center gap-5">
+        <img class="w-20 h-24" src="./images/cup.png" alt="" />
+        <div
+          class="flex gap-4 lg:flex-row flex-col items-center text-xl font-medium"
+        >
           <h1>Ready to get strated?</h1>
           <button
             class="btn border-none bg-gradient-to-r from-[#ff0000] to-[#ff8938] text-white text-xl font-bold"
@@ -271,31 +349,41 @@
           </button>
         </div>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-20">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-20 gap-8 md:text-left text-center"
+      >
         <div class="space-y-4">
           <h1 class="text-xl font-semibold mb-5">Quick Links</h1>
           <h1>Home</h1>
           <h1>About Us</h1>
-          <h1>Insurance</h1>
-          <h1>Privacy Policy</h1>
+          <h1>Product</h1>
+          <h1>Pricing Policy</h1>
         </div>
         <div class="space-y-4">
           <h1 class="text-xl font-semibold mb-5">Quick Links</h1>
           <h1>Home</h1>
           <h1>About Us</h1>
-          <h1>Insurance</h1>
-          <h1>Privacy Policy</h1>
+          <h1>Product</h1>
+          <h1>Pricing Policy</h1>
         </div>
         <div class="space-y-4">
           <h1 class="text-xl font-semibold mb-b">Quick Links</h1>
           <h1>Home</h1>
           <h1>About Us</h1>
         </div>
-        <div>
+        <div class="flex flex-col md:items-start items-center">
           <h1 class="text-2xl font-semibold">Subscribe to our newsletter</h1>
           <div class="mt-6">
-            <input class="rounded-lg p-4 bg-transparent border-b-2 border-gray-600 outline-none" type="text" name="" id="" placeholder="Email address"/>
-            <i class="fa-solid fa-chevron-right bg-gradient-to-r from-[#ff0000] to-[#ff8938] p-1 text-white rounded-full"></i>
+            <input
+              class="rounded-lg p-4 bg-transparent border-b-2 border-gray-600 outline-none"
+              type="text"
+              name=""
+              id=""
+              placeholder="Email address"
+            />
+            <i
+              class="fa-solid fa-chevron-right bg-gradient-to-r from-[#ff0000] to-[#ff8938] p-1 text-white rounded-full"
+            ></i>
           </div>
           <div class="mt-8 flex gap-4 text-xl">
             <i class="fa-brands fa-facebook-f"></i>
@@ -304,7 +392,9 @@
           </div>
         </div>
       </div>
-      <h1 class="mt-20 text-center font-medium">© 2024 GongCha - All rights reserved.</h1>
+      <h1 class="md:mt-20 mt-14 text-center font-medium">
+        © 2024 GongCha - All rights reserved.
+      </h1>
     </footer>
   </body>
 </html>
